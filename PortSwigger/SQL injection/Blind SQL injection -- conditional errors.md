@@ -16,7 +16,7 @@ Using ' and '' respectively to verify how it would be if an merror message is re
 `TrackingId=xyz'||(SELECT '')||'`   
 -- mySQL syntax, a SQL syntas error received.  
 
-TrackingId=xyz'||(SELECT '' FROM dual)||'   
+`TrackingId=xyz'||(SELECT '' FROM dual)||'`   
 -- Oracle syntax, must followed by 'FROM'. dual is a dummy tabel.   
 -- No error received. So the target is probably using an Oracle database.
 
