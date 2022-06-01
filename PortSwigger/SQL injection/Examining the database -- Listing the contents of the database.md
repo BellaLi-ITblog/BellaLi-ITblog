@@ -41,4 +41,13 @@ The application has a login function, and the database contains a table that hol
 
 6. Output the usernames and passwords.  
 ` ' union select username_pxqwui, password_bgvoxs from user_xacgsm --`  
--> 200 OK: we get the username 'administrator' and its corresponding password.
+-> 200 OK: we get the username 'administrator' and its corresponding password.  
+
+
+# For Oracle database:  
+
+Basiclly they have similar approaches to achieve the results.  
+
+We need to keep in mind that Oracle database needs to have select clause followed by where clause.  
+
+And remember to google the structure of information_schema and information_schema.columns in Oracle database.  
