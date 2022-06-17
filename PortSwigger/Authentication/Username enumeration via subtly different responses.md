@@ -9,7 +9,7 @@ On the **Payloads** tab, using **Simple list** payload type.
 
 On the **Option** tab, under **Grep-Extract**, click **Add**. Find the response of error message and highlight the part. The rest will be adjusted automatically.  
 
-This time, the Intruder attack will return one more column name **Error**, and the one who is slight different from other results will be ticked.
+This time, the Intruder attack will return the warning messages, and the one who is slight different from other results will be ticked.
 
 ## For password:  
 
