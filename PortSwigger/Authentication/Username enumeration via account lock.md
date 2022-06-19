@@ -1,0 +1,21 @@
+This lab is vulnerable to username enumeration. It uses account locking, but this contains a logic flaw. To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+
+## For username:
+We can try to figure out the username by trying each possible username for 5 times.
+To do this, we set one intruder position on username, and one empty position at the end.  
+`username=§example_username§&password=example_password§§`   
+Set the username payload as the list.   
+Set the empty payload as **Null payloads**.   
+**Cluster bomb** will be used as the attack type as it will iterate each username for five times.   
+As most of the username on the list do not exist in the database, there will be a 200 OK saying _"Invalid username or password"_.   
+Only the correct username, will have a longer process time than others. And it will contain a different error message saying _"You have made too many incorrect login attempts."_    
+And that's how we get the username.
+
+## For password:  
+Input the correct username, and set the password parameter as a payload position.   
+Add the list of the password to the payload.   
+**Create a grep extraction rule for the error message!**  
+Start attack.   
+Go through the result, find the one that is different from others.
+
+
