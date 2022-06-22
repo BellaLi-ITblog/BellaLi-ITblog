@@ -13,7 +13,7 @@ Here is an explanation of the difference between pitchfork and cluster bomb.
 > Pitchfork:  
 > ![image](https://user-images.githubusercontent.com/106157137/174254867-edfd5e77-91e8-4d1e-a1a9-cf627d9c2b84.png)
 
-> Cluster bomb
+> Cluster bomb:   
 > ![image](https://user-images.githubusercontent.com/106157137/174255228-11d5d3a9-1b09-49f8-a3f6-5c99a599e799.png)
 
 According to the result of response time, we can the username, which takes the longest processing time.  
